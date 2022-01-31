@@ -14,7 +14,7 @@
 <!-- HEADER -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
     <div class="container-xl">
-        <a class="navbar-brand" href="/">Инфосистема МОАИС</a>
+        <a class="navbar-brand" href="{{ route('landing') }}">Инфосистема МОАИС</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,7 +27,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/library">Библиотека</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('library') }}">Библиотека</a>
                     </li>
 
                     <li class="nav-item">
@@ -37,7 +37,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/recordings">Запись занятий</a>
                     </li>
-                @endif
+
+        @endif
             </ul>
             <!-- LOG IN -->
             @if (!Auth::guest())
@@ -46,7 +47,7 @@
                     <input type="submit" class="btn btn-danger" value="Выход из системы">
                 </form>
             @else
-                <div class="col-md-3 text-center">
+                <div class="col-md-4 text-end">
                     <button type="button" class="btn btn-outline-primary me-2" onclick="goToAuth()">Войти в систему</button>
                     <button type="button" class="btn btn-primary" onclick="goToReg()">Регистрация</button>
                 </div>

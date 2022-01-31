@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BooksController;
 
-Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index']);
-Route::get('/library', [BooksController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index'])->name('landing');;
+Route::get('/library', [BooksController::class, 'index'])->name('library');;
 Route::get('library/{bookID}', [BooksController::class, 'detail']);
 
 Auth::routes();

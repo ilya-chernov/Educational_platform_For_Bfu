@@ -39,7 +39,7 @@
         </div>
     </main>
     <footer class="pt-5 my-5 text-muted border-top mg-center">
-        Автор: <a href="https://vk.com/i.a.chernov">Илья Чернов</a>· Для официальной связи: i.chernov@hotmail.com © 2022
+       Educational System "Königsberg". Technical Preview build 1000 © 2022
     </footer>
 </div>
 @endsection
