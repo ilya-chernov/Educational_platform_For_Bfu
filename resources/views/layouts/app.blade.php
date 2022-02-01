@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 @endsection
 @section('main')
-    <div class="container d-flex  flex-column align-items-center">
-        <h1 class="my-3 text-left p-5 ">Профиль</h1>
+    <div class="container">
+        <h1 class="my-3 text-left">Профиль</h1>
         <div class="col-md-8 ">
             <h4 class="mb-3">Основная информация</h4>
             <hr class="mb-4">
@@ -27,12 +27,12 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Фамилия</label>
-                        <input type="text" class="form-control" id="lastName"  value="{{ auth()->user()->surname }}" readonly readonly>
+                        <input type="text" class="form-control" id="lastName"  value="{{ auth()->user()->surname }}" readonly>
                     </div>
                 </div>
 
                 <div class="mb-3">
-                    <label for="email">Электронный адрес <span class="text-muted">(Также является логином)</span></label>
+                    <label for="email">Электронный адрес <span class="text-muted">(является логином)</span></label>
                     <input type="email" class="form-control" id="email" value="{{ auth()->user()->email }}" readonly>
                 </div>
 
