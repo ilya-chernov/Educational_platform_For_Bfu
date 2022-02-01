@@ -4,6 +4,7 @@
 <div class="container">
     <h1 class="my-3 text-left"> Бибилиотека</h1>
     @if(count($books) > 0)
+        <p class="text-right"><a href="{{ route('book.add') }}">Добавить книгу</a></p>
     <table class="table table-striped">
         <thead>
         <tr>

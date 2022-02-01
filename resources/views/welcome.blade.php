@@ -1,7 +1,7 @@
 @extends('layouts.base')
 @section('title', 'Информационная система МОАИС')
 @section('main')
-<div class="col-lg-6 mx-auto p-3 py-md-5">
+<div class="col-lg-10 mx-auto p-3 py-md-5">
     <main>
         <div class="alert alert-primary" role="alert">
             Кантиана всегда под рукой! Учебные материалы, расписание и все остальное в быстрой доступности.<br> <a href="#" class="alert-link">Статья: как добавить веб-приложение на рабочий стол iOS и Android</a>
