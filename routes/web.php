@@ -13,7 +13,8 @@ Route::post('/library', [BooksController::class, 'storeForm'])->name('book.store
 Route::get('/library/add', [BooksController::class, 'showAddForm'])->name('book.add');
 Route::get('/library/{bookID}/edit', [BooksController::class, 'showEditBookForm'])->name('book.edit');
 
-
+Route::get('/kb', [\App\Http\Controllers\ProblemsController::class, 'index'])->name('kb');
+Route::get('/kb/{problemID}', [\App\Http\Controllers\ProblemsController::class, 'detail']);
 Route::patch(
     '/library/{bookID}', [BooksController::class, 'updateBook'])->name('book.update');
 
@@ -22,10 +23,7 @@ Route::get(
     [BooksController::class, 'showDeleteBookForm']
 )->name('book.delete');
 
-Route::delete(
-    '/library/{bookID}',
-    [BooksController::class, 'destroyBook']
-)->name('book.destroy');
+Route::delete('/library/{bookID}', [BooksController::class, 'destroyBook'])->name('book.destroy');
 
 Route::get('library/{bookID}', [BooksController::class, 'detail']);
 

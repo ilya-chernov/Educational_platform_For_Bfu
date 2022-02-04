@@ -3,9 +3,14 @@
 @section('main')
     <div class="col-lg-10 mx-auto p-3 py-md-5">
         <main>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Главная страница</li>
+                </ol>
+            </nav>
             <div class="alert alert-primary" role="alert">
                 Кантиана всегда под рукой! Учебные материалы, расписание и все остальное в быстрой доступности.<br> <a
-                    href="#" class="alert-link">Статья: как добавить веб-приложение на рабочий стол iOS и Android</a>
+                    href="/kb/3" class="alert-link">Статья: как добавить веб-приложение на рабочий стол iOS и Android</a>
             </div>
             <h1>Информационная система для студентов 1 курса Математического обеспечения БФУ им. И. Канта</h1>
             <p class="fs-5 col-lg-9">Здесь собраны все самые нужные и актуальные материалы (ссылки, файлы, расписание и
@@ -44,7 +49,7 @@
             </div>
         </main>
         <footer class="pt-5 my-5 text-muted border-top mg-center">
-            SchoolMotion Technical Preview build 1500 © 2022
+            ClassMotion Technical Preview 3 © 2022
         </footer>
     </div>
 @endsection

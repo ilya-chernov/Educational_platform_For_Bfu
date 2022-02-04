@@ -3,6 +3,7 @@
 
 @section('main')
     <div class="container">
+        <h1 class="my-3 text-left"> Изменение записи</h1>
         <form action=" {{ route('book.update', ['bookID' => $book->id]) }} " method="POST">
             @csrf
             @method('PATCH')

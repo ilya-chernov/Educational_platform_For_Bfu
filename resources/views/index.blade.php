@@ -9,7 +9,7 @@
         <thead>
         <tr>
             <th>Название</th>
-            <th>Ссылка на загрузку</th>
+            <th>Действия</th>
         </tr>
         </thead>
         <tbody>
@@ -18,6 +18,8 @@
         <td><t3>{{ $book-> title }}</t3></td>
         <td>
             <a href="library/{{ $book-> id }}/">Подробнее</a>
+            <a href="library/{{ $book-> id }}/edit">Изменить</a>
+            <a href="library/{{ $book-> id }}/delete">Удалить</a>
         </td>
         </tr>
             @endforeach
