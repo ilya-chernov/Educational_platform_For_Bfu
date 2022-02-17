@@ -1,20 +1,22 @@
 @extends('layouts.base')
-@section('title', 'Информационная система МОАИС')
+@section('title', 'Главная | ClassMotion')
 @section('main')
     <div class="col-lg-10 mx-auto p-3 py-md-5">
         <main>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">Главная страница</li>
+                    <li class="breadcrumb-item active" aria-current="page">Демо страница</li>
                 </ol>
             </nav>
             <div class="alert alert-primary" role="alert">
                 Кантиана всегда под рукой! Учебные материалы, расписание и все остальное в быстрой доступности.<br> <a
-                    href="/kb/3" class="alert-link">Статья: как добавить веб-приложение на рабочий стол iOS и Android</a>
+                    href="/kb/" class="alert-link">Статья: как добавить веб-приложение на рабочий стол iOS и Android</a>
             </div>
             <h1>Информационная система для студентов 1 курса Математического обеспечения БФУ им. И. Канта</h1>
             <p class="fs-5 col-lg-9">Здесь собраны все самые нужные и актуальные материалы (ссылки, файлы, расписание и
-                т. п.) для учебы. По всем вопросам обращайтесь к старосте или администратору системы.</p>
+                т. п.) для учебы. По всем вопросам обращайтесь к старосте или администратору системы.
+
+            </p>
 
             <!-- ><div class="mb-5">
              //   <a href="/docs/5.1/examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
